@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta IA Generativa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1>Encuesta sobre IA Generativa</h1>
+    <div id="encuesta">
+        <div class="campo" id="campo-id-empleado">
+            <label for="id-empleado">ID Empleado:</label>
+            <input type="text" id="id-empleado" name="id-empleado" required>
+        </div>
+        <div class="campo" id="campo-email">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="pregunta" id="pregunta1">
+            <p>1. ¿Qué es un prompt en el contexto de la IA Generativa?</p>
+            <input type="radio" name="respuesta1" value="a"> Una instrucción o entrada dada a un modelo de IA<br>
+            <input type="radio" name="respuesta1" value="b"> Un tipo de token utilizado en el procesamiento del lenguaje natural<br>
+            <input type="radio" name="respuesta1" value="c"> Un modelo de IA preentrenado<br>
+        </div>
+        <div class="pregunta" id="pregunta2">
+            <p>2. ¿Qué es un token en el procesamiento del lenguaje natural?</p>
+            <input type="radio" name="respuesta2" value="a"> Una palabra o fragmento de texto<br>
+            <input type="radio" name="respuesta2" value="b"> Un modelo de IA<br>
+            <input type="radio" name="respuesta2" value="c"> Una técnica de entrenamiento<br>
+        </div>
+        <div class="pregunta" id="pregunta3">
+            <p>3. ¿Qué son los modelos fundacionales (foundational models)?</p>
+            <input type="radio" name="respuesta3" value="a"> Modelos de IA entrenados desde cero<br>
+            <input type="radio" name="respuesta3" value="b"> Modelos de IA preentrenados en grandes cantidades de datos<br>
+            <input type="radio" name="respuesta3" value="c"> Algoritmos de optimización<br>
+        </div>
+        <button id="btn-siguiente">Siguiente</button>
+        <button id="btn-enviar">Enviar</button>
+        <button id="btn-guardar">Guardar</button>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
